@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Task1 — распределение функций ESB" id="0">
+    <mxGraphModel dx="3415" dy="1920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="2500" math="0" shadow="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="event-panel" parent="1" value="" style="rounded=0;html=0;fillColor=#F0F6FA;strokeColor=#9BB5C4;strokeWidth=1;pointerEvents=0;" vertex="1">
+          <mxGeometry x="60" y="114" width="2250" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=40;align=left;" value="Будущее 2.0 — C4 Container, целевое состояние через год" vertex="1">
+          <mxGeometry height="70" width="2300" x="50" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Клиникиu" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f2f2f2;strokeColor=#425466;" value="Оператор клиники [Person]" vertex="1">
+          <mxGeometry height="100" width="480" x="60" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Клиникиa" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="API клиники [Java]&#10;Приём, счета и адаптер&#10;ФЛК на входе" vertex="1">
+          <mxGeometry height="155" width="480" x="60" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="Клиникиb" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Клиническая БД&#10;[SQL Server]&#10;Карты, история, снимки" vertex="1">
+          <mxGeometry height="150" width="480" x="60" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="Клиникиp" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Пакетная обработка [Airflow]&#10;Проверки и преобразования&#10;Показатели работы клиник&#10;без медицинских полей" vertex="1">
+          <mxGeometry height="145" width="480" x="60" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="Клиникиv" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Продукт данных домена&#10;[S3 / таблицы Iceberg]&#10;Подготовленные показатели" vertex="1">
+          <mxGeometry height="145" width="480" x="60" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="Финтехu" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f2f2f2;strokeColor=#425466;" value="Клиент финтеха [Person]" vertex="1">
+          <mxGeometry height="100" width="480" x="650" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Финтехa" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Финтех API [Go / Java]&#10;Платежи и кредиты&#10;ФЛК и защита от повторной оплаты" vertex="1">
+          <mxGeometry height="155" width="480" x="650" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="Финтехb" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="БД финтеха&#10;[PostgreSQL]&#10;Счета, платежи, кредиты" vertex="1">
+          <mxGeometry height="150" width="480" x="650" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="Финтехp" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Пакетная обработка [Airflow]&#10;Проверки и преобразования&#10;Финансовые показатели&#10;по периоду и организации" vertex="1">
+          <mxGeometry height="145" width="480" x="650" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="Финтехv" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Продукт данных домена&#10;[S3 / таблицы Iceberg]&#10;Подготовленные показатели" vertex="1">
+          <mxGeometry height="145" width="480" x="650" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="ИИu" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f2f2f2;strokeColor=#425466;" value="Клиническая система [System]" vertex="1">
+          <mxGeometry height="100" width="480" x="1240" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ИИa" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="ИИ API [Python]&#10;Обработка исследований&#10;ФЛК на входе, изолированный доступ" vertex="1">
+          <mxGeometry height="155" width="480" x="1240" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="ИИb" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Хранилище ИИ&#10;[объекты / PostgreSQL]&#10;Данные для ИИ и результаты&#10;обработки" vertex="1">
+          <mxGeometry height="150" width="480" x="1240" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ИИp" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Пакетная обработка [Airflow]&#10;Проверки и преобразования&#10;Технические показатели&#10;без входов и результатов ИИ" vertex="1">
+          <mxGeometry height="145" width="480" x="1240" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="ИИv" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Продукт данных домена&#10;[S3 / таблицы Iceberg]&#10;Подготовленные показатели" vertex="1">
+          <mxGeometry height="145" width="480" x="1240" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="Будущие партнёрыu" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f2f2f2;strokeColor=#425466;" value="Системы партнёров [System]" vertex="1">
+          <mxGeometry height="100" width="480" x="1830" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Будущие партнёрыa" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#ffffff;strokeColor=#425466;" value="API партнёров [HTTPS]&#10;Фармацевтика / устройства&#10;Планируемые подключения" vertex="1">
+          <mxGeometry height="155" width="480" x="1830" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="Будущие партнёрыb" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="БД партнёров&#10;[внешние системы]&#10;Поставки и устройства" vertex="1">
+          <mxGeometry height="150" width="480" x="1830" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="Будущие партнёрыp" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Пакетная обработка [Airflow]&#10;Проверки и преобразования&#10;Поставки / устройства&#10;без данных пациентов" vertex="1">
+          <mxGeometry height="145" width="480" x="1830" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="Будущие партнёрыv" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f5f0e5;strokeColor=#425466;" value="Продукт данных домена&#10;[S3 / таблицы Iceberg]&#10;Подготовленные показатели" vertex="1">
+          <mxGeometry height="145" width="480" x="1830" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="query" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="SQL-движок [Dremio]&#10;Доступ по роли и домену&#10;Кэш / ограничения запросов" vertex="1">
+          <mxGeometry height="145" width="480" x="650" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="nessie" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Каталог таблиц [Nessie]&#10;Версии и ссылки&#10;на метаданные Iceberg" vertex="1">
+          <mxGeometry height="145" width="480" x="60" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="hub" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Каталог данных [DataHub]&#10;Поиск, владелец, схема&#10;и происхождение" vertex="1">
+          <mxGeometry height="145" width="480" x="1240" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Корпоративный вход [OIDC]&#10;Учётная запись и группы&#10;Аудит действий" vertex="1">
+          <mxGeometry height="145" width="480" x="1830" y="1710" as="geometry" />
+        </mxCell>
+        <mxCell id="portal" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#e8f0f7;strokeColor=#425466;" value="Портал отчётности [Power BI]&#10;Типовые срезы&#10;Конструктор отчётов" vertex="1">
+          <mxGeometry height="140" width="480" x="650" y="1980" as="geometry" />
+        </mxCell>
+        <mxCell id="person" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fontSize=27;fillColor=#f2f2f2;strokeColor=#425466;" value="Сотрудник / аналитик&#10;головного офиса или домена&#10;[Person]" vertex="1">
+          <mxGeometry height="140" width="480" x="1240" y="1980" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="300" y="500" as="sourcePoint" />
+            <mxPoint x="300" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label0" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="HTTPS / API" vertex="1">
+          <mxGeometry height="30" width="150" x="225" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="300" y="745" as="sourcePoint" />
+            <mxPoint x="300" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label1" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Чтение / запись" vertex="1">
+          <mxGeometry height="30" width="180" x="220" y="779" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="300" y="1000" as="sourcePoint" />
+            <mxPoint x="300" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label2" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Разрешённые поля" vertex="1">
+          <mxGeometry height="38" width="210" x="190" y="1054" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="300" y="1285" as="sourcePoint" />
+            <mxPoint x="300" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label3" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Запись набора" vertex="1">
+          <mxGeometry height="30" width="170" x="220" y="1332" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="500" as="sourcePoint" />
+            <mxPoint x="890" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="745" as="sourcePoint" />
+            <mxPoint x="890" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label5" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="HTTPS / API" vertex="1">
+          <mxGeometry height="30" width="180" x="800" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="1000" as="sourcePoint" />
+            <mxPoint x="890" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label6" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Разрешённые поля" vertex="1">
+          <mxGeometry height="30" width="210" x="790" y="1055" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="1285" as="sourcePoint" />
+            <mxPoint x="890" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label7" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Запись набора" vertex="1">
+          <mxGeometry height="40" width="170" x="805" y="1327" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1480" y="500" as="sourcePoint" />
+            <mxPoint x="1480" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label8" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="HTTPS / API" vertex="1">
+          <mxGeometry height="38" width="140" x="1410" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1480" y="745" as="sourcePoint" />
+            <mxPoint x="1480" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label9" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Чтение / запись" vertex="1">
+          <mxGeometry height="38" width="180" x="1400" y="779" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1480" y="1000" as="sourcePoint" />
+            <mxPoint x="1480" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label10" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Разрешённые поля" vertex="1">
+          <mxGeometry height="38" width="210" x="1375" y="1054" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1480" y="1285" as="sourcePoint" />
+            <mxPoint x="1480" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label11" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Запись набора" vertex="1">
+          <mxGeometry height="30" width="170" x="1395" y="1327" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2070" y="500" as="sourcePoint" />
+            <mxPoint x="2070" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label12" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="HTTPS / API" vertex="1">
+          <mxGeometry height="38" width="140" x="2000" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2070" y="745" as="sourcePoint" />
+            <mxPoint x="2070" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label13" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Чтение / запись" vertex="1">
+          <mxGeometry height="40" width="180" x="1980" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2070" y="1000" as="sourcePoint" />
+            <mxPoint x="2070" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label14" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Разрешённые поля" vertex="1">
+          <mxGeometry height="38" width="220" x="1970" y="1054" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2070" y="1285" as="sourcePoint" />
+            <mxPoint x="2070" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label15" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Запись набора" vertex="1">
+          <mxGeometry height="40" width="170" x="1985" y="1322" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1580" />
+              <mxPoint x="760" y="1580" />
+            </Array>
+            <mxPoint x="240" y="1545" as="sourcePoint" />
+            <mxPoint x="760" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label16" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Набор → SQL" vertex="1">
+          <mxGeometry height="38" width="160" x="570" y="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;entryX=0.375;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;html=0;fontSize=23;fontColor=#000000;labelBackgroundColor=#ffffff;labelBorderColor=none;spacing=2;" target="query" value="Финансовые&#10;показатели">
+          <mxGeometry relative="1" x="-0.5" as="geometry" y="0">
+            <Array as="points">
+              <mxPoint x="830" y="1605" />
+            </Array>
+            <mxPoint x="830" y="1545" as="sourcePoint" />
+            <mxPoint x="830" y="1700" as="targetPoint" />
+            <mxPoint as="offset" x="90" y="0" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;html=0;fontSize=23;fontColor=#000000;labelBackgroundColor=#ffffff;labelBorderColor=none;spacing=2;" value="Технические показатели ИИ">
+          <mxGeometry relative="1" as="geometry" x="0" y="0">
+            <Array as="points">
+              <mxPoint x="1420" y="1630" />
+              <mxPoint x="880" y="1630" />
+            </Array>
+            <mxPoint x="1420" y="1545" as="sourcePoint" />
+            <mxPoint x="880" y="1710" as="targetPoint" />
+            <mxPoint as="offset" x="0" y="0" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=1;html=0;fontSize=23;fontColor=#000000;labelBackgroundColor=#ffffff;labelBorderColor=none;spacing=2;" value="Поставки и устройства">
+          <mxGeometry relative="1" as="geometry" x="-0.4" y="0">
+            <Array as="points">
+              <mxPoint x="2010" y="1655" />
+              <mxPoint x="940" y="1655" />
+            </Array>
+            <mxPoint x="2010" y="1545" as="sourcePoint" />
+            <mxPoint x="940" y="1710" as="targetPoint" />
+            <mxPoint as="offset" x="0" y="0" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="540" y="1782" as="sourcePoint" />
+            <mxPoint x="650" y="1782" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label20" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="REST" vertex="1">
+          <mxGeometry height="30" width="66" x="560" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="890" y="1855" as="sourcePoint" />
+            <mxPoint x="890" y="1980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label21" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="SQL / разрешённые данные" vertex="1">
+          <mxGeometry height="30" width="305" x="750" y="1903" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1480" y="1980" as="sourcePoint" />
+            <mxPoint x="1480" y="1855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label22" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Поиск и карточки / HTTPS" vertex="1">
+          <mxGeometry height="30" width="280" x="1350" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1240" y="2050" as="sourcePoint" />
+            <mxPoint x="1130" y="2050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label23" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="HTTPS" vertex="1">
+          <mxGeometry height="30" width="75" x="1150" y="2008" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" style="endArrow=block;strokeWidth=3;dashed=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2070" y="2145" />
+              <mxPoint x="890" y="2145" />
+            </Array>
+            <mxPoint x="2070" y="1855" as="sourcePoint" />
+            <mxPoint x="890" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="label24" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="OIDC: вход в Power BI" vertex="1">
+          <mxGeometry height="38" width="250" x="1955" y="1933" as="geometry" />
+        </mxCell>
+        <mxCell id="note0" parent="1" style="text;html=0;align=left;fontSize=23;" value="Клиника и ИИ обмениваются медицинскими данными через закрытый API. Клиника передаёт счёт в финтех через API.&#10;Бизнес-правила выполняют сервисы доменов. Форматно-логический контроль (ФЛК) проверяет поля, типы и версию схемы.&#10;PowerBuilder и Camel продолжают работать в старых системах. Связи Camel переносим по одной после проверки результата, повторов и сбоев." vertex="1">
+          <mxGeometry height="120" width="2310" x="60" y="2295" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" parent="1" style="text;html=0;align=left;fontSize=23;" value="Внутри границ системы находятся свои приложения и платформа «Будущее 2.0». API и БД партнёров находятся снаружи.&#10;При публикации описания данных передаются в DataHub, а таблицы регистрируются в Nessie.&#10;У доменов свои владельцы и ресурсы. Отчёты используют готовые наборы. Для нового бизнеса согласуется контракт. Медицинские данные в витрины не попадают." vertex="1">
+          <mxGeometry height="120" width="2310" x="60" y="2170" as="geometry" />
+        </mxCell>
+        <mxCell id="label4" parent="1" style="text;html=0;whiteSpace=wrap;fontSize=23;fillColor=#ffffff;" value="Чтение / запись" vertex="1">
+          <mxGeometry height="30" width="180" x="800" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="event-title" parent="1" value="Потоковая обработка статуса оплаты" style="text;html=0;align=left;verticalAlign=middle;fontSize=27;fontStyle=1;fontColor=#17485D;" vertex="1">
+          <mxGeometry x="90" y="124" width="2160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="clinic-consumer" parent="1" value="Обработчик событий клиники&#10;ФЛК и преобразование статуса&#10;Проверка дублей по ID события" style="rounded=0;html=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#216682;strokeWidth=1.5;fontColor=#111111;fontSize=26;" vertex="1">
+          <mxGeometry x="94" y="181" width="465" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-queue" parent="1" value="Очередь событий&#10;Доставляет статус оплаты" style="rounded=0;html=0;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#216682;strokeWidth=1.5;fontColor=#111111;fontSize=26;" vertex="1">
+          <mxGeometry x="775" y="181" width="355" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="reliability-note" parent="1" value="API-клиенты задают таймауты и повторяют вызовы при временных сбоях.&#10;Обработчик повторяет обработку при временных ошибках.&#10;События, которые обработать не удалось, попадают в очередь ошибок." style="text;html=0;align=left;verticalAlign=middle;fontSize=23;fontColor=#17485D;" vertex="1">
+          <mxGeometry x="1238" y="177" width="1025" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="event-publish" parent="1" source="Финтехa" target="payment-queue" value="Публикует статус оплаты" style="edgeStyle=segmentEdgeStyle;rounded=1;html=0;strokeWidth=3;dashed=1;dashPattern=7 5;strokeColor=#216682;fontColor=#17485D;fontSize=23;endArrow=block;endFill=1;labelBackgroundColor=#F0F6FA;labelBorderColor=none;exitX=0;exitY=0.31;exitPerimeter=0;entryX=0.5;entryY=1;entryPerimeter=0;" edge="1">
+          <mxGeometry x="0.66" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="638" />
+              <mxPoint x="610" y="344" />
+              <mxPoint x="952" y="344" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="event-delivery" parent="1" source="payment-queue" target="clinic-consumer" value="Статус оплаты" style="edgeStyle=segmentEdgeStyle;rounded=1;html=0;strokeWidth=3;dashed=1;dashPattern=7 5;strokeColor=#216682;fontColor=#17485D;fontSize=23;endArrow=block;endFill=1;labelBackgroundColor=#F0F6FA;labelBorderColor=none;exitX=0;exitY=0.5;exitPerimeter=0;entryX=1;entryY=0.5;entryPerimeter=0;" edge="1">
+          <mxGeometry x="0" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="event-apply" parent="1" source="clinic-consumer" target="Клиникиa" value="Передаёт статус" style="edgeStyle=segmentEdgeStyle;rounded=1;html=0;strokeWidth=3;dashed=1;dashPattern=7 5;strokeColor=#216682;fontColor=#17485D;fontSize=23;endArrow=block;endFill=1;labelBackgroundColor=#F0F6FA;labelBorderColor=none;exitX=0.5;exitY=1;exitPerimeter=0;entryX=0;entryY=0.67;entryPerimeter=0;" edge="1">
+          <mxGeometry x="-0.52" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="326" y="344" />
+              <mxPoint x="34" y="344" />
+              <mxPoint x="34" y="694" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
